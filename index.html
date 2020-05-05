@@ -172,7 +172,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>1、请确保node版本大于6.2
+        <pre><code>有时会遇到博客内容已经部署到github，但page无法更新的情况，遇到此情况:
+
+首先在github上查看相关commits的状态，是否为 all checks have passed，如果是，请再等一段时间然后刷新blog，
+
+否则，请尝试以下操作:
+1、请确保node版本大于6.2
 
 2、在博客根目录（注意不是yilia根目录）执行以下命令：
     npm i hexo-generator-json-content --save
