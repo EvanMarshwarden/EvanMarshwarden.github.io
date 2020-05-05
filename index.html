@@ -172,7 +172,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <pre><code>1、请确保node版本大于6.2
+
+2、在博客根目录（注意不是yilia根目录）执行以下命令：
+    npm i hexo-generator-json-content --save
+
+3、在根目录 _config.yml 里添加配置： </code></pre><p>  jsonContent:<br>    meta: false<br>    pages: false<br>    posts:<br>      title: true<br>      date: true<br>      path: true<br>      text: false<br>      raw: false<br>      content: false<br>      slug: false<br>      updated: false<br>      comments: false<br>      link: false<br>      permalink: false<br>      excerpt: false<br>      categories: false<br>      tags: true </p>
+<pre><code>4、在博客根目录下执行命令:
+npm install --save hexo-deployer-git</code></pre>
       
 
       
